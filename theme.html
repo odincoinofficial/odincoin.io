@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ODIN COIN | Official Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --text-light: #111;
+      --bg-dark: #0e0e0e;
+      --text-dark: #f5f5f5;
+      --accent: #f1c40f;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.light {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header, .section, footer {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    header h1 {
+      color: var(--accent);
+      font-size: 2.5em;
+    }
+
+    .button {
+      background-color: var(--accent);
+      color: #000;
+      padding: 12px 24px;
+      margin: 10px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    ul {
+      text-align: left;
+      line-height: 1.8em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ODIN COIN</h1>
+    <p>Privacy. Power. ODIN.</p>
+    <a href="https://pancakeswap.finance" class="button">Buy on PancakeSwap</a>
+    <a href="https://t.me/odin_coin_official_bot" class="button">Join Telegram</a>
+  </header>
+
+  <div class="section">
+    <h2>About</h2>
+    <p>ODIN COIN is a community-driven token built on BNB Chain to enable secure and anonymous financial transfers. Designed with simplicity, myth, and security at its core.</p>
+    <p><strong>Smart Contract:</strong> <a href="https://bscscan.com/address/0xaEf6E9902ea15d07057337f318E5595f3D15a1c7" target="_blank">View on BscScan</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Live Chart</h2>
+    <iframe src="https://poocoin.app/tokens/0xaef6e9902ea15d07057337f318e5595f3d15a1c7" width="100%" height="400" style="border:none;"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>ODIN CVV NFT Collection</h2>
+    <p>Explore the limited edition 50+1 black card NFT collection.</p>
+    <a href="https://opensea.io" class="button">View on OpenSea</a>
+  </div>
+
+  <div class="section" id="odin-products">
+    <h2>Our Products</h2>
+    <ul>
+      <li>ODIN Coin — Privacy-first token on BNB Chain</li>
+      <li>ODIN Bank CVV NFT Collection</li>
+      <li>ODIN Cryptomixer 24/7 Telegram Bot</li>
+      <li>Validator staking on BNB Chain</li>
+      <li>More coming soon...</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>BNB Chain Validator</h2>
+    <p>We proudly support decentralization by staking to BNB Chain validator <code>0x0C5c...3A54</code>.</p>
+  </div>
+
+  <footer>
+    <p class="socials">
+      <a href="https://t.me/odin_coin_official_bot">Telegram</a> |
+      <a href="https://twitter.com/odin_coin">X (Twitter)</a>
+    </p>
+    <p>Created by ODIN TEAM © 2025</p>
+  </footer>
+
+  <script>
+    window.onload = function() {
+      const hour = new Date().getHours();
+      document.body.className = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+    };
+  </script>
+</body>
+</html>
