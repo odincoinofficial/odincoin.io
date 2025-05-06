@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODIN COIN | Official Site</title>
+    <title>ODIN COIN</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta property="og:title" content="ODIN COIN - Decentralized Realm">
-<meta property="og:description" content="Step into the world of ODIN COIN — powered by community and freedom.">
-<meta property="og:image" content="https://odincoinofficial.github.io/odincoin.io/odin-og-banner.jpg">
-<meta property="og:url" content="https://odincoinofficial.github.io/odincoin.io/">
-<meta name="twitter:card" content="summary_large_image">
-<script>
-  (function () {
-    const hour = new Date().getHours();
-    const isDay = hour >= 7 && hour < 19;
-    document.documentElement.setAttribute('data-theme', isDay ? 'light' : 'dark');
-  })();
-</script>
+    <meta property="og:description" content="Step into the world of ODIN COIN — powered by community and freedom.">
+    <meta property="og:image" content="https://yourdomain.com/odin-og-banner.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/odin-coin-site">
+    <meta name="twitter:card" content="summary_large_image">
+    <script>
+      (function () {
+        const hour = new Date().getHours();
+        const isDay = hour >= 7 && hour < 19;
+        document.documentElement.setAttribute('data-theme', isDay ? 'light' : 'dark');
+      })();
+    </script>
 </head>
 <body>
-    <header>
-        <h1>ODIN COIN</h1>
-        <p>Privacy. Power. ODIN.</p>
-        <a href="https://pancakeswap.finance" class="button">Buy on PancakeSwap</a>
-        <a href="https://t.me/odin_coin_official_bot" class="button">Join Telegram</a>
-    </header>
-    <body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
     <header>
         <h1>Welcome to ODIN COIN</h1>
         <p>The decentralized realm begins here.</p>
     </header>
     <main>
-        <div class="card">
+        <div class="card" id="about">
             <h2>About</h2>
             <p>ODIN COIN is your gateway to a decentralized future.</p>
         </div>
 
-        <section id="price" class="card">
+        <section class="fade-in" id="price" class="card">
             <h2>ODIN COIN Price</h2>
             <p>Current price: <span id="odin-price">Loading...</span></p>
         </section>
 
-        <section id="roadmap" class="card">
+        <section class="fade-in" id="roadmap" class="card">
             <h2>Roadmap</h2>
             <ul>
                 <li><strong>Q2 2025:</strong> NFT Collection Launch, Initial Marketing</li>
@@ -52,8 +58,87 @@
                 <li><strong>Q1 2026:</strong> Strategic partnerships, ODIN Launchpad</li>
             </ul>
         </section>
-    </main>
-     <footer>
+
+        <section class="fade-in" id="tokenomics" class="card">
+            <h2>Tokenomics</h2>
+            <ul>
+                <li><strong>Total Supply:</strong> 1,000,000 ODIN</li>
+                <li><strong>Liquidity:</strong> 70%</li>
+                <li><strong>Marketing:</strong> 15%</li>
+                <li><strong>Development:</strong> 10%</li>
+                <li><strong>Team Reserve:</strong> 5%</li>
+            </ul>
+        </section>
+
+        <section class="fade-in" id="team" class="card">
+            <h2>Team</h2>
+            <div class="team-grid">
+                <div class="member">
+                    <h3>Odin The Founder</h3>
+                    <p>Visionary & Strategist</p>
+                </div>
+                <div class="member">
+                    <h3>Thor The Dev</h3>
+                    <p>Blockchain Engineer</p>
+                </div>
+                <div class="member">
+                    <h3>Freya The Voice</h3>
+                    <p>Community Manager</p>
+                </div>
+            </div>
+        </section>
+    
+<section class="fade-in" id="community" class="card">
+    <h2>Join Our Community</h2>
+    <p>Be part of the ODIN COIN army — follow us on Telegram for updates and announcements.</p>
+    <div class="telegram-widget">
+        <iframe src="https://t.me/odin_coin_official" width="100%" height="80" frameborder="0"></iframe>
+    </div>
+</section>
+
+<section class="fade-in" id="subscribe" class="card">
+    <h2>Subscribe for Updates</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+
+<section class="fade-in" id="faq" class="card">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <h3>How can I buy ODIN COIN?</h3>
+        <p>You can purchase ODIN COIN on PancakeSwap using BNB. Use our official contract address to avoid scams.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Where can I store ODIN COIN?</h3>
+        <p>You can store ODIN COIN in any wallet that supports BNB Chain tokens, such as MetaMask or Trust Wallet.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What is the total supply of ODIN COIN?</h3>
+        <p>There are 1,000,000 ODIN tokens in total supply.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Is there a staking program?</h3>
+        <p>Staking will be available in upcoming development phases. Stay tuned!</p>
+    </div>
+</section>
+
+
+<section id="buy" class="card">
+    <h2>Buy ODIN COIN</h2>
+    <p>You can buy ODIN COIN on PancakeSwap using the official contract address.</p>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x..." class="buy-btn" target="_blank">Buy on PancakeSwap</a>
+</section>
+
+<div class="language-switcher">
+    <button onclick="switchLanguage('en')">EN</button>
+    <button onclick="switchLanguage('ru')">RU</button>
+</div>
+
+</main>
+    <footer>
         <p>&copy; 2025 ODIN COIN</p>
     </footer>
     <script>
@@ -69,5 +154,36 @@
     }
     fetchPrice();
     </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const faders = document.querySelectorAll(".fade-in");
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -20px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+</script>
+
+
+<script>
+function switchLanguage(lang) {
+  alert("Multilanguage switching is under development. Current selected: " + lang.toUpperCase());
+}
+</script>
+
 </body>
 </html>
