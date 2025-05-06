@@ -115,3 +115,90 @@ main {
   font-size: 1.1rem;
   color: var(--accent);
 }
+
+
+.navbar {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+/* Анимации при появлении */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.buy-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.buy-btn:hover {
+  background-color: #005bb5;
+}
+
+.language-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.language-switcher button {
+  margin: 0 3px;
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--card-bg);
+  color: var(--accent);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.language-switcher button:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
