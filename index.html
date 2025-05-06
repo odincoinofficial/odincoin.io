@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>ODIN COIN | Official Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function () {
+    const hour = new Date().getHours();
+    const isDay = hour >= 7 && hour < 19;
+    document.documentElement.setAttribute('data-theme', isDay ? 'light' : 'dark');
+  })();
+</script>
     <style>
         body {
             background-color: #0e0e0e;
@@ -48,6 +55,39 @@
             text-decoration: none;
             font-size: 1.5em;
         }
+              :root[data-theme='light'] {
+  --bg: #f9f9f9;
+  --text: #111;
+  --accent: #0077ff;
+  --card-bg: #ffffff;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0e0e0e;
+  --text: #f1f1f1;
+  --accent: #00c2ff;
+  --card-bg: #1a1a1a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
